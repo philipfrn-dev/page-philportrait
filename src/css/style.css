@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(27, 27, 27);
+    color: azure;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    font-style: bold;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin-top: 40px;    
+    
+}
+
+header span{
+    color: rgb(27, 27, 27);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: azure;
+}
+header p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    
+
+}
+header p::before {
+    content: "📷";
+}
+
+.menu-link {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 10px 30px 10px 10px;
+      
+}
+.menu-link a{
+    text-decoration: none;
+    color: azure;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+    
+    
+}
+img {
+    margin: 10px 10px 10px 10px;
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    
+    
+}
+
+@media screen and (max-width: 480px) {
+    header h1{
+        width: auto;
+        font-size: 25px;
+        
+    }
+    img {
+        width: 300px;
+        margin-right: 35px;
+    }
+   
+}
+
